@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -22,10 +24,10 @@ app.listen(port, () => {
 const params = {
   TableName: 'ev-charging-station',
   Item: {
-    id: '1',
-    status: 'Example Charging Station',
-    latitude: 12.345,
-    longitude: 67.890,
+    id: '2',
+    status: 'available',
+    latitude: 12.350,
+    longitude: 67.880,
   },
 };
 
